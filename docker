@@ -31,7 +31,7 @@ function compile_and_install_docker {
   cd "$VAGRANT_CWD/src"
   git checkout master
   git pull
-  git checkout "v${DOCKER_VERSION}"
+  # git checkout "v${DOCKER_VERSION}"
   go get -v github.com/dotcloud/docker/...
   go install -v github.com/dotcloud/docker/...
 }
